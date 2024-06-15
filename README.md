@@ -18,7 +18,7 @@ En el ámbito de la ciencia de datos, RStudio se utiliza para aplicar métodos c
 
 Finalmente, la ingeniería de datos se enfoca en la construcción y optimización de sistemas para recopilar, almacenar y procesar grandes volúmenes de datos. Con RStudio, los ingenieros de datos pueden diseñar y mantener infraestructuras de datos robustas, implementando pipelines de datos y optimizando el rendimiento de los sistemas de procesamiento. Tecnologías como Hadoop y Spark se integran fácilmente con RStudio, proporcionando una base sólida para el flujo continuo de datos.
 
-A.	LIMPIEZA Y TRANSFORMACIÓN DE DATOS:
+**A.	LIMPIEZA Y TRANSFORMACIÓN DE DATOS:**
 
 1.	Limpieza: Primero como descripción general nuestra gestión de datos se basó en la adquisición, organización, almacenamiento y manipulación de la base de datos cuya colección son los datos organizados de manera lógica para obtenerlos los obtuvimos de Kaggle, el archivo inicial descargado es una archivo CVS por lo que los datos se encuentran sin procesar y los extrajimos para ser revisados una vez revisados se cuentan y clasifican para la verificación del conjunto de datos, los datos fueron ordenados en función de varias variables.
 
@@ -27,7 +27,8 @@ Otra de las funciones utilizadas son head y View, donde Head nos muestra las obs
 is.na nos ayuda a la identificación las observaciones con valores faltantes en R etiquetarlos con Verdadero en valores faltantes y Falso sin valores con el fin de inspeccionar la variable Industry en busca de valores faltantes.
 Para inspeccionar la observación número 64, nos muestra en el marco de datos.
 
-B.	ANALISIS DE DATOS
+**B.	ANALISIS DE DATOS**
+
 La base de datps utilizada esta denominada como “data(proyecto_final)”.
 Con esta función podemos verificar la impresión de nuestra tabla para poder revisar los datos que vamos analizar y poder entender que es lo que necesitamos analizar.
 
@@ -72,7 +73,8 @@ Con el comando “summary” sucesivamente se puede ir analizando las columnas q
 
 •	sd(wage)
 
-C.	VISUALIZACIÓN DE DATOS
+**C.	VISUALIZACIÓN DE DATOS**
+
 Con la función “hist (columna x, freq = FALSE)” se puede analizar el histograma de los datos en validación para determinar la toma de decisiones de forma efectiva.
 
 <img width="441" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/35472412-de25-45d6-980b-8e4d96ea5395">
@@ -94,7 +96,7 @@ Para determinar variables categóricas se usa el comando “summary (columna x)�
 
 <img width="441" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/63455af1-f584-4581-a547-aedbcd9a35b8">
 
-D.	CIENCIA DE DATOS
+**D.	CIENCIA DE DATOS**
 
 1.	REGRECIÓN LINEAL
 
@@ -104,7 +106,7 @@ D.	CIENCIA DE DATOS
 **Interpretación de los Coeficientes
 **
 1.	Intercept (Intercepto):
-o	Estimate: 1832.89
+    o	Estimate: 1832.89
 
     o	Esto indica el valor esperado de Cliente cuando todas las variables independientes son cero.
     
@@ -150,13 +152,37 @@ o	Estimate: 1832.89
 
 Estadísticas del Modelo
 
-•	Residual standard error: 1155 (un gran valor indica un modelo que no ajusta bien).
+        •	Residual standard error: 1155 (un gran valor indica un modelo que no ajusta bien).
+        
+        •	Multiple R-squared: 0.0002862 (muy bajo, lo que indica que las variables independientes explican una fracción mínima de la variabilidad en la variable dependiente).
+        
+        •	Adjusted R-squared: -0.0002143 (ajustado por el número de predictores, aún peor).
+        
+        •	F-statistic: 0.5718 en 5 y 9986 grados de libertad (df) con un p-valor de 0.7217 (el modelo en conjunto no es significativo).
 
-•	Multiple R-squared: 0.0002862 (muy bajo, lo que indica que las variables independientes explican una fracción mínima de la variabilidad en la variable dependiente).
 
-•	Adjusted R-squared: -0.0002143 (ajustado por el número de predictores, aún peor).
 
-•	F-statistic: 0.5718 en 5 y 9986 grados de libertad (df) con un p-valor de 0.7217 (el modelo en conjunto no es significativo).
+
+**E.	INGENIERIA DE DATOS**
+
+1.	Instalación y carga de las librerías
+Primero, es necesario instalar y cargar las librerías que utilizaremos para la web scraping y manipulación de datos en R. Estas librerías son
+`rvest`, `dplyr`, `stringr`, y `tidyverse`.
+
+
+        •	`rvest`: Se utiliza para realizar web scraping, es decir, extraer datos de páginas web.
+        •	`dplyr`: Proporciona herramientas para la manipulación de datos.
+        •	`stringr`: Se utiliza para manipulación de cadenas de caracteres.
+        •	`tidyverse`: Es un conjunto de paquetes de R diseñados para la ciencia de datos.
+
+   El código para instalar y cargar estas librerías es el siguiente:
+
+
+        install.packages("rvest") 
+        install.packages("dplyr") 
+        install.packages("stringr") 
+        install.packages("tidyverse")
+
 
 
 
