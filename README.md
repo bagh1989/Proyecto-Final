@@ -29,6 +29,82 @@ Con esta función podemos verificar la impresión de nuestra tabla para poder re
 
 <img width="461" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/f590dd1d-3132-4665-b7bd-326bad73178d">
 
+Por medio de este código se puede visualizar toda la información de la base de datos para poder analizar la información que necesitamos desarrollar.
+
+Con la función “STR” se puede visualizar todas las variables que contiene nuestra base de datos que estamos analizando.
+
+<img width="457" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/e64dbf2c-c472-4a8d-abc2-8263576f10c6">
+
+La función “HEAD” muestra las primeras 5 variables que se tienen en la base de datos como se muestra en la siguiente imagen:
+
+
+<img width="381" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/a8cc52f0-b24d-4b43-adc5-9a02c2f25a07">
+
+La función “TAIL” nos muestra las ultimas variables de la base de datos.
+
+<img width="360" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/d7c1f0af-f453-450e-a6bb-c0dbe205e25b">
+
+La función “summary” nos muestra el resumen de todas variables de nuestra base de datos.
+
+<img width="359" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/a22b508c-160b-4145-91d1-bb9b01829f62">
+
+Lo interesante de la función “attach” es que nos permite ver el resumen especifico de la columna que deseamos revisar lo que nos da una proyección de análisis más limpia. Por ejemplo: con la función “summary() más la columna que deseamos analizar “cliente” nos da el resumen detallado como se muestra en la siguiente imagen:
+
+<img width="441" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/4abb6908-f5b1-4d9f-8d5d-6cfc187d01ae">
+
+Con el comando “summary” sucesivamente se puede ir analizando las columnas que se deseen, para que analice un campo en específico lo cual resulta como beneficio para el análisis que se requiera, podemos usar los siguientes comandos, por ejemplo:
+
+•	mean(wage)
+•	mean(age)
+•	median(wage)
+•	min(age)
+•	max(wage)
+•	var(wage)
+•	sd(wage)
+
+C.	VISUALIZACIÓN DE DATOS
+Con la función “hist (columna x, freq = FALSE)” se puede analizar el histograma de los datos en validación para determinar la toma de decisiones de forma efectiva.
+
+<img width="441" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/35472412-de25-45d6-980b-8e4d96ea5395">
+
+La función “hist(log(columna x), freq = FALSE)” permite agrupar la gráfica de la siguiente forma lo cual resulta de beneficio para el análisis en gestión.
+
+<img width="362" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/eeebe49f-4eb9-4cae-a573-ca8d69f2f5d0">
+
+Con la función “lines (density (log (Columna x)), col = 4)” se puede agregar líneas en la gráfica lo que resulta relevante para el análisis de datos, como se muestra a continuación:
+
+•	lines(density(log(columna x)), col = 3)
+•	lines(density(log(columna x)), col = 2)
+
+<img width="441" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/3ec1eb05-2de5-4b10-9d16-52138335ad9f">
+
+Variables Categóricas
+
+Para determinar variables categóricas se usa el comando “summary (columna x)” según la columna que se necesita analizar para graficar los campos en análisis.
+
+<img width="441" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/63455af1-f584-4581-a547-aedbcd9a35b8">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
