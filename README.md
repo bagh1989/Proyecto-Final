@@ -84,6 +84,53 @@ Para determinar variables categóricas se usa el comando “summary (columna x)�
 
 <img width="441" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/63455af1-f584-4581-a547-aedbcd9a35b8">
 
+D.	CIENCIA DE DATOS
+
+1.	REGRECIÓN LINEAL
+
+<img width="420" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/8a31102d-db1c-403e-b750-1668a696be26">
+
+Interpretación de los Coeficientes
+
+1.	Intercept (Intercepto):
+o	Estimate: 1832.89
+o	Esto indica el valor esperado de Cliente cuando todas las variables independientes son cero.
+o	Significancia: Muy significativa (p < 0.001).
+2.	Auto:
+o	Estimate: -0.0026
+o	El coeficiente sugiere que por cada unidad adicional en Auto, Cliente disminuye en 0.0026 unidades.
+o	Significancia: No significativa (p = 0.992).
+3.	Ubicación:
+o	Estimate: -0.0248
+o	El coeficiente sugiere que por cada unidad adicional en Ubicación, Cliente disminuye en 0.0248 unidades.
+o	Significancia: No significativa (p = 0.710).
+4.	Fecha:
+o Estimate: 0.0000001279
+o	El coeficiente sugiere que por cada unidad adicional
+en Fecha, Cliente aumenta en 0.0000001279 unidades.
+o	Significancia: No significativa (p = 0.612).
+5.	PagoEfectivo:
+o	Estimate: -36.1612
+o	Si el pago es en efectivo, Cliente disminuye en 36.1612 unidades en comparación con el pago no en efectivo.
+o	Significancia: No significativa (p = 0.118).
+6.	SeguroSI:
+o	Estimate: -0.0564
+o	Si el seguro es sí, Cliente disminuye en 0.0564 unidades en comparación con no tener seguro.
+o	Significancia: No significativa (p = 0.998).
+
+Estadísticas del Modelo
+
+•	Residual standard error: 1155 (un gran valor indica un modelo que no ajusta bien).
+•	Multiple R-squared: 0.0002862 (muy bajo, lo que indica que las variables independientes explican una fracción mínima de la variabilidad en la variable dependiente).
+•	Adjusted R-squared: -0.0002143 (ajustado por el número de predictores, aún peor).
+•	F-statistic: 0.5718 en 5 y 9986 grados de libertad (df) con un p-valor de 0.7217 (el modelo en conjunto no es significativo).
+
+
+
+
+
+
+
 
 
 
