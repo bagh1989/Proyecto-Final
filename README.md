@@ -184,6 +184,123 @@ Primero, es necesario instalar y cargar las librerías que utilizaremos para la 
         install.packages("tidyverse")
 
 
+<img width="179" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/41c96cac-d3c3-467d-a8f3-ac51b51f3c91">
+
+
+        library(rvest) 
+        library(dplyr) 
+        library(stringr) 
+        library(tidyverse)
+
+<img width="225" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/07219ad6-9980-4ffa-9307-a8466850748b">
+
+2.	Leer una página web:
+
+Luego se utiliza la función `read_html()` para leer el contenido de una página web. En este ejemplo, se usará la página de Wikipedia sobre el lenguaje de programación R.
+
+El código para leer la página web es el siguiente:
+
+    url <- 'https://en.wikipedia.org/wiki/R_(programming_language)' webpage <- read_html(url)
+
+    Quedando de la siguiente manera:
+
+    <img width="429" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/97198dcc-4b29-4487-8052-fa264bb9789a">
+
+    <img width="443" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/957a20a4-baf0-4571-aa07-7aa5d382d18a">
+
+    3.	Extraer datos específicos
+    
+Luego extraemos datos específicos de la página web. En este caso, queremos obtener los párrafos ocho, veinticuatro y cuarenta de la sección principal y la tabla de información (infobox) sobre el lenguaje R.
+
+Para saber cuántos párrafos tiene la página web de donde se está sacando la información se puede utilizar el siguiente código:
+
+<img width="151" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/e0c6ec35-42e6-479e-907e-4af45cbf9b88">
+
+Dando como resultado lo siguiente:
+
+<img width="441" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/24edb68b-b344-48b1-b870-ff7c52c82a86">
+
+Este código se puede utilizar siempre para saber cuántos párrafos va tener la página web de donde se esté sacando la información y cómo podemos observar esta página cuenta con 91 párrafos.
+
+Continuando con la extracción de párrafos usamos selectores CSS para identificar y extraer el contenido de los párrafos de la página. El selector CSS `'p'` se utiliza para seleccionar el número de párrafo de la página que se desea sacar la información.
+
+        Eight_paragraph <- webpage %>%
+        html_node('p') %>%
+        html_text() 
+
+        print(Eight_paragraph)
+
+        <img width="442" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/257478a3-9c5f-4f2f-a598-ec8797181e31">
+
+        Luego se tiene la opción de ir a extraer la tabla de información (infobox)
+
+
+Primero identificamos la tabla de información (infobox) usando el selector CSS adecuado y la convertimos en un dataframe para facilitar su manipulación y visualización.
+
+El código para extraer y mostrar la tabla de información es:
+
+        infobox <- webpage %>% 
+        html_node('.infobox') %>% 
+        html_table()
+        print(infobox)
+
+<img width="433" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/3ec996a6-d473-4e91-af18-2f11dd09a85d">
+
+4.	Limpiar y estructurar los datos:
+5.	
+Después de extraer los datos, a menudo es necesario limpiarlos y estructurarlos adecuadamente para su análisis.
+
+El texto extraído puede contener espacios innecesarios que podemos eliminar utilizando la función `str_trim()` de la librería `stringr`.
+
+El código a utilizar será el siguiente:
+
+
+        Eight_paragraph_clean <- str_trim(Eight_paragraph) 
+        print(Eight_paragraph_clean)
+
+<img width="440" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/3fb09287-3200-4e4d-944a-6926e914a080">
+
+Luego podemos limpiar y estructurar la tabla de información, donde las tablas pueden requerir limpieza adicional, como renombrar columnas y filtrar filas innecesarias. Utilizamos funciones de `dplyr` para este propósito.
+
+El código para limpiar y estructurar la tabla de información es el siguiente:
+
+        infobox_clean <- infobox %>% 
+        rename(Attribute = 1, Value = 2) %>% 
+        filter(!is.na(Attribute)) 
+        print(infobox_clean)
+
+        <img width="442" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/0e9069f3-fd11-4163-8ac6-98ec1763498d">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
