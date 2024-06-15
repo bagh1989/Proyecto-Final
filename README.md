@@ -271,6 +271,37 @@ El código para limpiar y estructurar la tabla de información es el siguiente:
 
         <img width="442" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/0e9069f3-fd11-4163-8ac6-98ec1763498d">
 
+ 
+ 5.	Análisis de Datos
+
+
+Luego realizamos un análisis de datos para extraer medidas de resumen estadístico. Para este ejemplo, agregaremos una columna ficticia de valores numéricos a la tabla para ilustrar el proceso.
+
+Primero, agregamos una columna ficticia de datos numéricos para el análisis.
+
+
+        set.seed(123)
+
+        Luego utilizaremos este código para realizar la reproductabilidad. infobox_clean$NumericValue <- sample(1:100, nrow(infobox_clean), replace = TRUE)
+        
+        print(infobox_clean)
+
+
+Donde quedará de la siguiente forma:
+
+<img width="440" alt="image" src="https://github.com/bagh1989/Proyecto-Final/assets/172723509/67220c58-9f81-462a-8ef6-6d6f5bb9117f">
+
+Luego se realizó el cálculo de las medidas de resumen estadístico, donde utilizamos `summarise()` de `dplyr` para calcular medidas como la media, mediana, desviación estándar, entre otros.
+
+
+
+
+
+
+
+
+
+
         
 
 
