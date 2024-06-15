@@ -55,11 +55,17 @@ Lo interesante de la función “attach” es que nos permite ver el resumen esp
 Con el comando “summary” sucesivamente se puede ir analizando las columnas que se deseen, para que analice un campo en específico lo cual resulta como beneficio para el análisis que se requiera, podemos usar los siguientes comandos, por ejemplo:
 
 •	mean(wage)
+
 •	mean(age)
+
 •	median(wage)
+
 •	min(age)
+
 •	max(wage)
+
 •	var(wage)
+
 •	sd(wage)
 
 C.	VISUALIZACIÓN DE DATOS
