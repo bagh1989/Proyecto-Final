@@ -1,5 +1,9 @@
 # Proyecto-Final
 
+
+![image](https://github.com/bagh1989/Proyecto-Final/assets/172723509/fe3edbf3-c647-4678-b4df-93349e0d2dcd)
+
+
 **INTRODUCCIÓN**
 
 El procesamiento y análisis de grandes volúmenes de datos es una tarea compleja y multifacética que abarca varias disciplinas esenciales para extraer información valiosa de datos en bruto. En este contexto, el uso de RStudio, una herramienta poderosa y flexible para análisis de datos y programación estadística, resulta fundamental. RStudio proporciona un entorno integrado que facilita el desarrollo de cada uno de los componentes clave en el flujo de trabajo de datos.
