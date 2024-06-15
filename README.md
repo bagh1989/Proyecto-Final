@@ -116,14 +116,21 @@ o	Significancia: No significativa (p = 0.710).
 
 6.	Fecha:
 o Estimate: 0.0000001279
-o	El coeficiente sugiere que por cada unidad adicional
-en Fecha, Cliente aumenta en 0.0000001279 unidades.
+
+o	El coeficiente sugiere que por cada unidad adicional en Fecha, Cliente aumenta en 0.0000001279 unidades.
+
 o	Significancia: No significativa (p = 0.612).
-7.	PagoEfectivo:
+
+8.	PagoEfectivo:
+
 o	Estimate: -36.1612
+
 o	Si el pago es en efectivo, Cliente disminuye en 36.1612 unidades en comparación con el pago no en efectivo.
+
 o	Significancia: No significativa (p = 0.118).
-8.	SeguroSI:
+
+10.	SeguroSI:
+
 o	Estimate: -0.0564
 
 o	Si el seguro es sí, Cliente disminuye en 0.0564 unidades en comparación con no tener seguro.
